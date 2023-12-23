@@ -1,0 +1,2 @@
+1. Mi producto es una lista de tareas que esta en proceso de mejora y sirve para tener en orden las cosas que se debe hacer.
+2. Con esta lista el cliente podra ver que tareas tiene hechas y cuales tiene pendientes por el momento, se añadiran mas funciones.
