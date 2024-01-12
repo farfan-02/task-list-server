@@ -23,4 +23,15 @@ router.get("/incomplete", (req,res)=>{
     res.send(tareasIncompletas);
 });
 
+function validarParametros(req,res,next){
+    const { parametro1, parametro2 } = req.query;
+    if( !parametro1 || !parametro2 ){
+        return res.status(400).send({error:'se requieren los parametros'});
+    };
+};
+
+router.get("/validacion", validarParametros, (req,res)=>{
+    res.send('parametros validos');
+});
+
 module.exports = router;
